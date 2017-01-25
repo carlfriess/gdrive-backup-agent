@@ -28,7 +28,7 @@ Add two remotes:
 - The first called **`gdrive`** and follow the instructions to connect rclone to your Google Drive.
 - The second called **`s3`** and again follow the instructions. Be sure to add your AWS Access Key and Secret Access Key.
 
-Next, open the `config.json` and the `AWS-credentials.json` files and adjust all the configurations (see [Configuration](#Configuration)).
+Next, open the `config.json` and the `AWS-credentials.json` files and adjust all the configurations (see [Configuration](#configuration)).
 
 You'll also need to [add an incoming webhook](https://my.slack.com/services/new/incoming-webhook/) to your Slack team and copy the webhook URL to `config.json`.
 
@@ -44,15 +44,15 @@ Ideally you should schedule the script to run regularly. This can be done with *
 
 The configuration for this script is split into two files:
 
-###AWS-credentials.json
+### AWS-credentials.json
 
 | Field | Example | Description |
 | ----- |:-------:| ----------- |
-| **`accessKeyId`** | `<AWS_ACCESS_KEY>` | The AWS Access Key for a user with access to the appropriate bucket. |
-| **`secretAccessKey`** | `<AWS_SECRET_ACCESS_KEY>` | The AWS Secret Access Key for a user with access to the appropriate bucket. |
-| **`region`** | `us-west-1` | The AWS region where the bucket is located. |
+| **`accessKeyId`** | `<AWS_ACCESS_KEY>` | The AWS Access Key for a user with access to the appropriate bucket. |
+| **`secretAccessKey`** | `<AWS_SECRET_ACCESS_KEY>` | The AWS Secret Access Key for a user with access to the appropriate bucket. |
+| **`region`** | `us-west-1` | The AWS region where the bucket is located. |
 
-###config.json
+### config.json
 
 | Field | Example | Description |
 | ----- |:-------:| ----------- |
