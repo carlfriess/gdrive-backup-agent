@@ -1,0 +1,16 @@
+{
+    "slack": {
+        "url": "<SLACK_WEBHOOK_URL>",
+        "username": "Google Drive Backup Agent"
+    },
+    "s3": {
+        "bucketName": "<S3_BUCKET_NAME>"
+    },
+    "rclone": {
+        "config": "~/.rclone.conf",
+        "srcPath": "gdrive:<GOOGLE_DRIVE_PATH>",
+        "destPath": "s3:<S3_BUCKET_NAME>"
+    },
+    "numDaysKept": 7,
+    "shutdown": false
+}
